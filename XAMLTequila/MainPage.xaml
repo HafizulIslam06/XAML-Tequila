@@ -2,8 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XAMLTequila.MainPage">
-
-    <ScrollView>
+    <!--<ScrollView>
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
@@ -31,6 +30,187 @@
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
         </VerticalStackLayout>
-    </ScrollView>
+    </ScrollView>-->
+
+    <Grid Padding="10">
+        <!-- Define Grid Columns and Rows -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="105"/>
+        </Grid.RowDefinitions>
+
+        <!-- Table Number Section -->
+        <Label Grid.Row="0"
+               Grid.Column="0"
+               Text="Table #"
+               FontSize="50"
+               FontAttributes="Bold"
+               TextColor="#FAFAFA"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+
+        <!-- Menu Buttons Section -->
+        <StackLayout Grid.Row="0"
+                     Grid.Column="1"
+                     Orientation="Horizontal"
+                     HorizontalOptions="End"
+                     VerticalOptions="Center"
+                     Spacing="10">
+
+            <!-- Split By Item Button -->
+            <Frame BackgroundColor="#ACB8B4"
+                   CornerRadius="10"
+                   Padding="10"
+                   HasShadow="False"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center">
+                <StackLayout HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             Spacing="0">
+                    <Label Text="SPLIT BY"
+                           FontSize="32"
+                           FontAttributes="Bold"
+                           TextColor="#000000"
+                           HorizontalOptions="Center"/>
+                    <Label Text="ITEM"
+                           FontSize="32"
+                           FontAttributes="Bold"
+                           TextColor="#000000"
+                           HorizontalOptions="Center"/>
+                </StackLayout>
+            </Frame>
+
+            <!-- Split By Evenly Button -->
+            <Frame BackgroundColor="#FFFFFF"
+                   CornerRadius="10"
+                   Padding="10"
+                   HasShadow="False"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center">
+                <StackLayout HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             Spacing="0">
+                    <Label Text="SPLIT BY"
+                           FontSize="32"
+                           FontAttributes="Bold"
+                           TextColor="#000000"
+                           HorizontalOptions="Center"/>
+                    <Label Text="EVENLY"
+                           FontSize="32"
+                           FontAttributes="Bold"
+                           TextColor="#000000"
+                           HorizontalOptions="Center"/>
+                </StackLayout>
+            </Frame>
+
+            <!-- Split By Seat Button -->
+            <Frame BackgroundColor="#FFFFFF"
+                   CornerRadius="10"
+                   Padding="10"
+                   HasShadow="False"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center">
+                <StackLayout HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             Spacing="0">
+                    <Label Text="SPLIT BY"
+                           FontSize="32"
+                           FontAttributes="Bold"
+                           TextColor="#000000"
+                           HorizontalOptions="Center"/>
+                    <Label Text="SEAT"
+                           FontSize="32"
+                           FontAttributes="Bold"
+                           TextColor="#000000"
+                           HorizontalOptions="Center"/>
+                </StackLayout>
+            </Frame>
+
+            <!-- Edit Button -->
+            <Frame BackgroundColor="#FFFFFF"
+                   CornerRadius="10"
+                   Padding="10"
+                   HasShadow="False"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center">
+                <StackLayout HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             Orientation="Horizontal"
+                             Spacing="10">
+                    <Label Text="EDIT"
+                           FontSize="32"
+                           FontAttributes="Bold"
+                           TextColor="#000000"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                    <Image Source="file_edit.png"
+                           HeightRequest="97" WidthRequest="88"/>
+                </StackLayout>
+            </Frame>
+
+            <!-- Print Button -->
+            <Frame BackgroundColor="#FFFFFF"
+                   CornerRadius="10"
+                   Padding="10"
+                   HasShadow="False"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center">
+                <StackLayout HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             Orientation="Horizontal"
+                             Spacing="10">
+                    <Label Text="PRINT"
+                           FontSize="32"
+                           FontAttributes="Bold"
+                           TextColor="#000000"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                    <Image Source="file.png"
+                           HeightRequest="82" WidthRequest="91"/>
+                </StackLayout>
+            </Frame>
+
+            <!-- Print All Button -->
+            <Frame BackgroundColor="#FFFFFF"
+                   CornerRadius="10"
+                   Padding="10"
+                   HasShadow="False"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center">
+                <StackLayout HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             Orientation="Horizontal"
+                             Spacing="10">
+                    <StackLayout Orientation="Vertical"
+                                 HorizontalOptions="Center">
+                        <Label Text="PRINT"
+                               FontSize="32"
+                               FontAttributes="Bold"
+                               TextColor="#000000"
+                               HorizontalOptions="Center"/>
+                        <Label Text="ALL"
+                               FontSize="32"
+                               FontAttributes="Bold"
+                               TextColor="#000000"
+                               HorizontalOptions="Center"/>
+                    </StackLayout>
+                    <Image Source="multipple_file.png" HeightRequest="76" WidthRequest="91"/>
+                </StackLayout>
+            </Frame>
+
+            <!-- Home Button -->
+            <Frame BackgroundColor="#000000"
+                   CornerRadius="10"
+                   Padding="10"
+                   HasShadow="False"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center">
+                <Image Source="home.png" HeightRequest="76" WidthRequest="91"/>
+            </Frame>
+        </StackLayout>
+    </Grid>
 
 </ContentPage>
