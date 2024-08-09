@@ -18,7 +18,7 @@
                  Grid.ColumnSpan="2"
                  HorizontalOptions="FillAndExpand"
                  VerticalOptions="FillAndExpand" 
-                 CornerRadius="10"/>
+                 CornerRadius="20"/>
 
         <!-- Table Number Section -->
         <Label Grid.Row="0"
@@ -223,8 +223,8 @@
         <StackLayout Grid.Row="1" 
                  Grid.ColumnSpan="2" 
                  Orientation="Horizontal"
-                 Spacing="10">
-            <!-- Add more components as needed -->
+                 Spacing="10">            
+            <!--Fram 1-->
             <Frame CornerRadius="20" HasShadow="True" Padding="0" Margin="10">
                 <Grid>
                     <!-- Define Row Definitions for Fixed Top, Scrollable Body, and Fixed Footer -->
@@ -387,6 +387,507 @@
                                 <Label Text="Item Count 7" FontSize="20" TextColor="Black"/>
                             </StackLayout>
                         </StackLayout>
+                    </ScrollView>
+
+                    <!-- Footer Section -->
+                    <StackLayout BackgroundColor="White" Grid.Row="2">
+                        <Frame Grid.Row="2" BackgroundColor="LightGray" CornerRadius="20" Padding="0" HasShadow="False" BorderColor="Transparent">
+                            <StackLayout Orientation="Horizontal" Padding="10,10,10,30">
+                                <!-- Footer Details -->
+                                <StackLayout Orientation="Horizontal" Padding="0,0,15,0">
+                                    <StackLayout>
+                                        <Label Text="SUBTOTAL" FontSize="20" TextColor="Black"/>
+                                        <Label Text="SALES TAX (8.25)" FontSize="20" TextColor="Black"/>
+                                        <Label Text="SVC Fee" FontSize="20" TextColor="Black"/>
+                                        <Label Text="TOTAL" FontAttributes="Bold" FontSize="24" TextColor="Black"/>
+                                        <Label Text="Cash Discount" FontSize="20" TextColor="Black"/>
+                                        <Label Text="PAY WITH CASH" FontSize="20" TextColor="Black"/>
+                                    </StackLayout>
+                                    <StackLayout>
+                                        <Label Text="$46.19" FontSize="20" TextColor="Black" HorizontalOptions="End"/>
+                                        <Label Text="$3.81" FontSize="20" TextColor="Black" HorizontalOptions="End"/>
+                                        <Label Text="$2.00" FontSize="20" TextColor="Black" HorizontalOptions="End"/>
+                                        <Label Text="$52.00" FontSize="24" FontAttributes="Bold" TextColor="Black" HorizontalOptions="End"/>
+                                        <Label Text="-$2.00" FontSize="20" TextColor="Black" HorizontalOptions="End"/>
+                                        <Label Text="$50.00" FontSize="20" TextColor="Black" HorizontalOptions="End"/>
+                                    </StackLayout>
+                                </StackLayout>
+                                <!-- Scroll Arrows -->
+                                <StackLayout Orientation="Vertical" HorizontalOptions="End" VerticalOptions="Center" Spacing="10">
+                                    <Frame BackgroundColor="Black" CornerRadius="20">
+                                        <Image Source="arrow_up.png" HeightRequest="40" WidthRequest="50"/>
+                                    </Frame>
+                                    <Frame BackgroundColor="Black" CornerRadius="20">
+                                        <Image Source="arrow_down.png" HeightRequest="40" WidthRequest="50"/>
+                                    </Frame>
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </Grid>
+            </Frame>
+            <!-- Fram 2 -->
+            <Frame CornerRadius="20" HasShadow="True" Padding="0" Margin="10">
+                <Grid>
+                    <!-- Define Row Definitions for Fixed Top, Scrollable Body, and Fixed Footer -->
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <!-- Top section -->
+                        <RowDefinition Height="*"/>
+                        <!-- Body section -->
+                        <RowDefinition Height="Auto"/>
+                        <!-- Footer section -->
+                    </Grid.RowDefinitions>
+
+                    <!-- Top Section -->
+                    <StackLayout Grid.Row="0" BackgroundColor="White" Padding="10">
+                        <Label Text="Check #: 2/4" TextColor="Black" FontSize="40" HorizontalTextAlignment="Center"/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="0,0,0,10">
+                            <!-- Left StackLayout -->
+                            <StackLayout HorizontalOptions="StartAndExpand">
+                                <Label Text="Server: Mary" FontSize="16" TextColor="Black" Padding="0,5,0,0"/>
+                                <Label Text="Cashier: TECH" FontSize="16" TextColor="Black"/>
+                                <Label Text="Ticket #: 52375" FontSize="20" TextColor="Black" Padding="0,10,0,0"/>
+                            </StackLayout>
+
+                            <!-- Right StackLayout -->
+                            <StackLayout HorizontalOptions="EndAndExpand">
+                                <Label Text="Table p7" FontSize="32" TextColor="Black"/>
+                                <Label Text="4/26/2024 6:27 PM" FontSize="16" TextColor="Black"/>
+                                <Label Text="Palapa Wall" FontSize="20" TextColor="Black"/>
+                            </StackLayout>
+                        </StackLayout>
+                        <!-- Line Divider -->
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Spacing="5">
+                            <!-- Divider elements go here -->
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <!-- Body Section -->
+                    <ScrollView Grid.Row="1" BackgroundColor="White" Padding="10,0">
+                        <StackLayout>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+
+                                <StackLayout Grid.Row="0" Grid.Column="0">
+                                    <Label Text="2 RITA JUM HH" FontSize="20" Margin="0,0,0,5" TextColor="Black"/>
+                                    <Label Text="1 CCQ BLANCO lg" FontSize="20" Margin="0,0,0,5" TextColor="Black"/>
+                                    <Label Text="1 TEA" FontSize="20" Margin="0,0,0,5" TextColor="Black"/>
+                                    <Label Text="1 TEA" FontSize="20" Margin="0,0,0,5" TextColor="Black"/>
+                                    <Label Text="1 RITA SPC sm" FontSize="20" Margin="0,0,0,5" TextColor="Black"/>
+                                </StackLayout>
+                                <StackLayout Grid.Row="0" Grid.Column="1">
+                                    <Label Text="$19.00" FontSize="20" Margin="0,0,0,5" TextColor="Black" HorizontalOptions="End"/>
+                                    <Label Text="$10.99" FontSize="20" Margin="0,0,0,5" TextColor="Black" HorizontalOptions="End"/>
+                                    <Label Text="$3.10" FontSize="20" Margin="0,0,0,5" TextColor="Black" HorizontalOptions="End"/>
+                                    <Label Text="$3.10" FontSize="20" Margin="0,0,0,5" TextColor="Black" HorizontalOptions="End"/>
+                                    <Label Text="$10.00" FontSize="20" Margin="0,0,0,5" TextColor="Black" HorizontalOptions="End"/>
+                                </StackLayout>
+                            </Grid>
+                            <StackLayout HorizontalOptions="End" Margin="0,10,0,0">
+                                <Label Text="Item Count 7" FontSize="20" TextColor="Black"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </ScrollView>
+
+                    <!-- Footer Section -->
+                    <StackLayout BackgroundColor="White" Grid.Row="2">
+                        <Frame Grid.Row="2" BackgroundColor="LightGray" CornerRadius="20" Padding="0" HasShadow="False" BorderColor="Transparent">
+                            <StackLayout Orientation="Horizontal" Padding="10,10,10,30">
+                                <!-- Footer Details -->
+                                <StackLayout Orientation="Horizontal" Padding="0,0,15,0">
+                                    <StackLayout>
+                                        <Label Text="SUBTOTAL" FontSize="20" TextColor="Black"/>
+                                        <Label Text="SALES TAX (8.25)" FontSize="20" TextColor="Black"/>
+                                        <Label Text="SVC Fee" FontSize="20" TextColor="Black"/>
+                                        <Label Text="TOTAL" FontAttributes="Bold" FontSize="24" TextColor="Black"/>
+                                        <Label Text="Cash Discount" FontSize="20" TextColor="Black"/>
+                                        <Label Text="PAY WITH CASH" FontSize="20" TextColor="Black"/>
+                                    </StackLayout>
+                                    <StackLayout>
+                                        <Label Text="$46.19" FontSize="20" TextColor="Black" HorizontalOptions="End"/>
+                                        <Label Text="$3.81" FontSize="20" TextColor="Black" HorizontalOptions="End"/>
+                                        <Label Text="$2.00" FontSize="20" TextColor="Black" HorizontalOptions="End"/>
+                                        <Label Text="$52.00" FontSize="24" FontAttributes="Bold" TextColor="Black" HorizontalOptions="End"/>
+                                        <Label Text="-$2.00" FontSize="20" TextColor="Black" HorizontalOptions="End"/>
+                                        <Label Text="$50.00" FontSize="20" TextColor="Black" HorizontalOptions="End"/>
+                                    </StackLayout>
+                                </StackLayout>
+                                <!-- Scroll Arrows -->
+                                <StackLayout Orientation="Vertical" HorizontalOptions="End" VerticalOptions="Center" Spacing="10">
+                                    <Frame BackgroundColor="Black" CornerRadius="20">
+                                        <Image Source="arrow_up.png" HeightRequest="40" WidthRequest="50"/>
+                                    </Frame>
+                                    <Frame BackgroundColor="Black" CornerRadius="20">
+                                        <Image Source="arrow_down.png" HeightRequest="40" WidthRequest="50"/>
+                                    </Frame>
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </Grid>
+            </Frame>
+            <!-- Fram 3 -->
+            <Frame CornerRadius="20" HasShadow="True" Padding="0" Margin="10">
+                <Grid>
+                    <!-- Define Row Definitions for Fixed Top, Scrollable Body, and Fixed Footer -->
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <!-- Top section -->
+                        <RowDefinition Height="*"/>
+                        <!-- Body section -->
+                        <RowDefinition Height="Auto"/>
+                        <!-- Footer section -->
+                    </Grid.RowDefinitions>
+
+                    <!-- Top Section -->
+                    <StackLayout Grid.Row="0" BackgroundColor="White" Padding="10">
+                        <Label Text="Check #: 3/4" TextColor="Black" FontSize="40" HorizontalTextAlignment="Center"/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="0,0,0,10">
+                            <!-- Left StackLayout -->
+                            <StackLayout HorizontalOptions="StartAndExpand">
+                                <Label Text="Server: Mary" FontSize="16" TextColor="Black" Padding="0,5,0,0"/>
+                                <Label Text="Cashier: TECH" FontSize="16" TextColor="Black"/>
+                                <Label Text="Ticket #: 52375" FontSize="20" TextColor="Black" Padding="0,10,0,0"/>
+                            </StackLayout>
+
+                            <!-- Right StackLayout -->
+                            <StackLayout HorizontalOptions="EndAndExpand">
+                                <Label Text="Table p7" FontSize="32" TextColor="Black"/>
+                                <Label Text="4/26/2024 6:27 PM" FontSize="16" TextColor="Black"/>
+                                <Label Text="Palapa Wall" FontSize="20" TextColor="Black"/>
+                            </StackLayout>
+                        </StackLayout>
+                        <!-- Line Divider -->
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Spacing="5">
+                            <!-- Divider elements go here -->
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <!-- Body Section -->
+                    <ScrollView Grid.Row="1" BackgroundColor="White" Padding="10,0">
+                        <StackLayout>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+
+                                <StackLayout Grid.Row="0" Grid.Column="0">
+                                    <Label Text="2 RITA JUM HH" FontSize="20" Margin="0,0,0,5" TextColor="Black"/>
+                                    <Label Text="1 CCQ BLANCO lg" FontSize="20" Margin="0,0,0,5" TextColor="Black"/>
+                                    <Label Text="1 TEA" FontSize="20" Margin="0,0,0,5" TextColor="Black"/>
+                                    <Label Text="1 TEA" FontSize="20" Margin="0,0,0,5" TextColor="Black"/>
+                                    <Label Text="1 RITA SPC sm" FontSize="20" Margin="0,0,0,5" TextColor="Black"/>
+                                </StackLayout>
+                                <StackLayout Grid.Row="0" Grid.Column="1">
+                                    <Label Text="$19.00" FontSize="20" Margin="0,0,0,5" TextColor="Black" HorizontalOptions="End"/>
+                                    <Label Text="$10.99" FontSize="20" Margin="0,0,0,5" TextColor="Black" HorizontalOptions="End"/>
+                                    <Label Text="$3.10" FontSize="20" Margin="0,0,0,5" TextColor="Black" HorizontalOptions="End"/>
+                                    <Label Text="$3.10" FontSize="20" Margin="0,0,0,5" TextColor="Black" HorizontalOptions="End"/>
+                                    <Label Text="$10.00" FontSize="20" Margin="0,0,0,5" TextColor="Black" HorizontalOptions="End"/>
+                                </StackLayout>
+                            </Grid>
+                            <StackLayout HorizontalOptions="End" Margin="0,10,0,0">
+                                <Label Text="Item Count 7" FontSize="20" TextColor="Black"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </ScrollView>
+
+                    <!-- Footer Section -->
+                    <StackLayout BackgroundColor="White" Grid.Row="2">
+                        <Frame Grid.Row="2" BackgroundColor="LightGray" CornerRadius="20" Padding="0" HasShadow="False" BorderColor="Transparent">
+                            <StackLayout Orientation="Horizontal" Padding="10,10,10,30">
+                                <!-- Footer Details -->
+                                <StackLayout Orientation="Horizontal" Padding="0,0,15,0">
+                                    <StackLayout>
+                                        <Label Text="SUBTOTAL" FontSize="20" TextColor="Black"/>
+                                        <Label Text="SALES TAX (8.25)" FontSize="20" TextColor="Black"/>
+                                        <Label Text="SVC Fee" FontSize="20" TextColor="Black"/>
+                                        <Label Text="TOTAL" FontAttributes="Bold" FontSize="24" TextColor="Black"/>
+                                        <Label Text="Cash Discount" FontSize="20" TextColor="Black"/>
+                                        <Label Text="PAY WITH CASH" FontSize="20" TextColor="Black"/>
+                                    </StackLayout>
+                                    <StackLayout>
+                                        <Label Text="$46.19" FontSize="20" TextColor="Black" HorizontalOptions="End"/>
+                                        <Label Text="$3.81" FontSize="20" TextColor="Black" HorizontalOptions="End"/>
+                                        <Label Text="$2.00" FontSize="20" TextColor="Black" HorizontalOptions="End"/>
+                                        <Label Text="$52.00" FontSize="24" FontAttributes="Bold" TextColor="Black" HorizontalOptions="End"/>
+                                        <Label Text="-$2.00" FontSize="20" TextColor="Black" HorizontalOptions="End"/>
+                                        <Label Text="$50.00" FontSize="20" TextColor="Black" HorizontalOptions="End"/>
+                                    </StackLayout>
+                                </StackLayout>
+                                <!-- Scroll Arrows -->
+                                <StackLayout Orientation="Vertical" HorizontalOptions="End" VerticalOptions="Center" Spacing="10">
+                                    <Frame BackgroundColor="Black" CornerRadius="20">
+                                        <Image Source="arrow_up.png" HeightRequest="40" WidthRequest="50"/>
+                                    </Frame>
+                                    <Frame BackgroundColor="Black" CornerRadius="20">
+                                        <Image Source="arrow_down.png" HeightRequest="40" WidthRequest="50"/>
+                                    </Frame>
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </Grid>
+            </Frame>
+            <!-- Fram 4 -->
+            <Frame CornerRadius="20" HasShadow="True" Padding="0" Margin="10">
+                <Grid>
+                    <!-- Define Row Definitions for Fixed Top, Scrollable Body, and Fixed Footer -->
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <!-- Top section -->
+                        <RowDefinition Height="*"/>
+                        <!-- Body section -->
+                        <RowDefinition Height="Auto"/>
+                        <!-- Footer section -->
+                    </Grid.RowDefinitions>
+
+                    <!-- Top Section -->
+                    <StackLayout Grid.Row="0" BackgroundColor="White" Padding="10">
+                        <Label Text="Check #: 4/4" TextColor="Black" FontSize="40" HorizontalTextAlignment="Center"/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="0,0,0,10">
+                            <!-- Left StackLayout -->
+                            <StackLayout HorizontalOptions="StartAndExpand">
+                                <Label Text="Server: Mary" FontSize="16" TextColor="Black" Padding="0,5,0,0"/>
+                                <Label Text="Cashier: TECH" FontSize="16" TextColor="Black"/>
+                                <Label Text="Ticket #: 52375" FontSize="20" TextColor="Black" Padding="0,10,0,0"/>
+                            </StackLayout>
+
+                            <!-- Right StackLayout -->
+                            <StackLayout HorizontalOptions="EndAndExpand">
+                                <Label Text="Table p7" FontSize="32" TextColor="Black"/>
+                                <Label Text="4/26/2024 6:27 PM" FontSize="16" TextColor="Black"/>
+                                <Label Text="Palapa Wall" FontSize="20" TextColor="Black"/>
+                            </StackLayout>
+                        </StackLayout>
+                        <!-- Line Divider -->
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Spacing="5">
+                            <!-- Divider elements go here -->
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
+                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <!-- Body Section -->
+                    <ScrollView Grid.Row="1" BackgroundColor="White" Padding="10,0">
+                        <StackLayout>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+
+                                <StackLayout Grid.Row="0" Grid.Column="0">
+                                    <Label Text="2 RITA JUM HH" FontSize="20" Margin="0,0,0,5" TextColor="Black"/>
+                                    <Label Text="1 CCQ BLANCO lg" FontSize="20" Margin="0,0,0,5" TextColor="Black"/>
+                                    <Label Text="1 TEA" FontSize="20" Margin="0,0,0,5" TextColor="Black"/>
+                                    <Label Text="1 TEA" FontSize="20" Margin="0,0,0,5" TextColor="Black"/>
+                                    <Label Text="1 RITA SPC sm" FontSize="20" Margin="0,0,0,5" TextColor="Black"/>
+                                </StackLayout>
+                                <StackLayout Grid.Row="0" Grid.Column="1">
+                                    <Label Text="$19.00" FontSize="20" Margin="0,0,0,5" TextColor="Black" HorizontalOptions="End"/>
+                                    <Label Text="$10.99" FontSize="20" Margin="0,0,0,5" TextColor="Black" HorizontalOptions="End"/>
+                                    <Label Text="$3.10" FontSize="20" Margin="0,0,0,5" TextColor="Black" HorizontalOptions="End"/>
+                                    <Label Text="$3.10" FontSize="20" Margin="0,0,0,5" TextColor="Black" HorizontalOptions="End"/>
+                                    <Label Text="$10.00" FontSize="20" Margin="0,0,0,5" TextColor="Black" HorizontalOptions="End"/>
+                                </StackLayout>
+                            </Grid>
+                            <StackLayout HorizontalOptions="End" Margin="0,10,0,0">
+                                <Label Text="Item Count 7" FontSize="20" TextColor="Black"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </ScrollView>
+
+                    <!-- Footer Section -->
+                    <StackLayout BackgroundColor="White" Grid.Row="2">
+                        <Frame Grid.Row="2" BackgroundColor="LightGray" CornerRadius="20" Padding="0" HasShadow="False" BorderColor="Transparent">
+                            <StackLayout Orientation="Horizontal" Padding="10,10,10,30">
+                                <!-- Footer Details -->
+                                <StackLayout Orientation="Horizontal" Padding="0,0,15,0">
+                                    <StackLayout>
+                                        <Label Text="SUBTOTAL" FontSize="20" TextColor="Black"/>
+                                        <Label Text="SALES TAX (8.25)" FontSize="20" TextColor="Black"/>
+                                        <Label Text="SVC Fee" FontSize="20" TextColor="Black"/>
+                                        <Label Text="TOTAL" FontAttributes="Bold" FontSize="24" TextColor="Black"/>
+                                        <Label Text="Cash Discount" FontSize="20" TextColor="Black"/>
+                                        <Label Text="PAY WITH CASH" FontSize="20" TextColor="Black"/>
+                                    </StackLayout>
+                                    <StackLayout>
+                                        <Label Text="$46.19" FontSize="20" TextColor="Black" HorizontalOptions="End"/>
+                                        <Label Text="$3.81" FontSize="20" TextColor="Black" HorizontalOptions="End"/>
+                                        <Label Text="$2.00" FontSize="20" TextColor="Black" HorizontalOptions="End"/>
+                                        <Label Text="$52.00" FontSize="24" FontAttributes="Bold" TextColor="Black" HorizontalOptions="End"/>
+                                        <Label Text="-$2.00" FontSize="20" TextColor="Black" HorizontalOptions="End"/>
+                                        <Label Text="$50.00" FontSize="20" TextColor="Black" HorizontalOptions="End"/>
+                                    </StackLayout>
+                                </StackLayout>
+                                <!-- Scroll Arrows -->
+                                <StackLayout Orientation="Vertical" HorizontalOptions="End" VerticalOptions="Center" Spacing="10">
+                                    <Frame BackgroundColor="Black" CornerRadius="20">
+                                        <Image Source="arrow_up.png" HeightRequest="40" WidthRequest="50"/>
+                                    </Frame>
+                                    <Frame BackgroundColor="Black" CornerRadius="20">
+                                        <Image Source="arrow_down.png" HeightRequest="40" WidthRequest="50"/>
+                                    </Frame>
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </Grid>
+            </Frame>         
+            <!-- Fram 5 -->
+            <Frame CornerRadius="20" HasShadow="True" Padding="0" Margin="10">
+                <Grid>
+                    <!-- Define Row Definitions for Fixed Top, Scrollable Body, and Fixed Footer -->
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <!-- Top section -->
+                        <RowDefinition Height="*"/>
+                        <!-- Body section -->
+                        <RowDefinition Height="Auto"/>
+                        <!-- Footer section -->
+                    </Grid.RowDefinitions>
+
+                    <!-- Top Section -->
+                    <StackLayout Grid.Row="0" BackgroundColor="White" Padding="10">
+                        
+                    </StackLayout>
+
+                    <!-- Body Section -->
+                    <ScrollView Grid.Row="1" BackgroundColor="White" Padding="10,0">
+                        
                     </ScrollView>
 
                     <!-- Footer Section -->
