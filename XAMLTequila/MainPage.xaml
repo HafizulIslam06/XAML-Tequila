@@ -233,14 +233,16 @@
                         <StackLayout>
                             <Label Text="Check #: 1/4" TextColor="Black" FontSize="40" HorizontalTextAlignment="Center"/>
 
-                            <StackLayout Orientation="Horizontal" Spacing="20">
-                                <StackLayout>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                                <!-- Left StackLayout -->
+                                <StackLayout HorizontalOptions="StartAndExpand">
                                     <Label Text="Server: Mary" FontSize="16" TextColor="Black"/>
                                     <Label Text="Cashier: TECH" FontSize="16" TextColor="Black"/>
                                     <Label Text="Ticket #: 52375" FontSize="20" TextColor="Black"/>
                                 </StackLayout>
 
-                                <StackLayout>
+                                <!-- Right StackLayout -->
+                                <StackLayout HorizontalOptions="EndAndExpand">
                                     <Label Text="Table p7" FontSize="32" TextColor="Black"/>
                                     <Label Text="4/26/2024 6:27 PM" FontSize="16" TextColor="Black"/>
                                     <Label Text="Palapa Wall" FontSize="20" TextColor="Black"/>
@@ -323,12 +325,42 @@
                                     </StackLayout>
                                 </StackLayout>                                
                             </ScrollView>
-                            
-                            <!--Footer-->
-                            
+
+                            <!-- Footer -->
+                            <StackLayout Orientation="Horizontal">
+                                <!-- Footer Details -->
+                                <StackLayout Orientation="Horizontal" Padding="0,0,15,0">
+                                    <!-- Left Column -->
+                                    <StackLayout>
+                                        <Label Text="SUBTOTAL" FontSize="20" TextColor="Black"/>
+                                        <Label Text="SALES TAX (8.25)" FontSize="20" TextColor="Black"/>
+                                        <Label Text="SVC Fee" FontSize="20" TextColor="Black"/>
+                                        <Label Text="TOTAL" FontSize="24" TextColor="Black"/>
+                                        <Label Text="Cash Discount" FontSize="20" TextColor="Black"/>
+                                        <Label Text="PAY WITH CASH" FontSize="20" TextColor="Black"/>
+                                    </StackLayout>
+                                    <!-- Right Column -->
+                                    <StackLayout>
+                                        <Label Text="$46.19" FontSize="20" TextColor="Black" HorizontalOptions="End"/>
+                                        <Label Text="$3.81" FontSize="20" TextColor="Black" HorizontalOptions="End"/>
+                                        <Label Text="$2.00" FontSize="20" TextColor="Black" HorizontalOptions="End"/>
+                                        <Label Text="$52.00" FontSize="24" TextColor="Black" HorizontalOptions="End"/>
+                                        <Label Text="-$2.00" FontSize="20" TextColor="Black" HorizontalOptions="End"/>
+                                        <Label Text="$50.00" FontSize="20" TextColor="Black" HorizontalOptions="End"/>
+                                    </StackLayout>
+                                </StackLayout>
+                                <!-- Scroll Arrows -->
+                                <StackLayout Orientation="Vertical" HorizontalOptions="End" VerticalOptions="Center" Spacing="10">
+                                    <Frame BackgroundColor="Black" CornerRadius="20">
+                                        <Image Source="arrow_up.png" HeightRequest="40" WidthRequest="50" />
+                                    </Frame>
+                                    <Frame BackgroundColor="Black" CornerRadius="20">
+                                        <Image Source="arrow_down.png" HeightRequest="40" WidthRequest="50" />
+                                    </Frame>
+                                </StackLayout>
+                            </StackLayout>
                         </StackLayout>
-                    </Frame>
-                    
+                    </Frame>                    
                 </StackLayout>
             </ScrollView>
         </StackLayout>
