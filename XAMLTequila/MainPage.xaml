@@ -226,6 +226,7 @@
             <!-- Add more components as needed -->
             <ScrollView Orientation="Horizontal">
                 <StackLayout Orientation="Horizontal" Spacing="10">
+                    
                     <!-- Screen 1 -->
                     <Frame BackgroundColor="White" Margin="10" Padding="10" CornerRadius="10">
                         <!-- Top -->
@@ -245,8 +246,7 @@
                                     <Label Text="Palapa Wall" FontSize="20" TextColor="Black"/>
                                 </StackLayout>
                             </StackLayout>
-
-                            <!-- Dashed Line Divider -->
+                            <!-- Line Divider -->
                             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Spacing="5">
                                 <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
                                 <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
@@ -289,7 +289,8 @@
                                 <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
                                 <!-- Repeat as needed -->
                             </StackLayout>
-
+                            
+                            <!--Body-->
                             <ScrollView Orientation="Vertical">
                                 <StackLayout Margin="0,10">
                                     <Grid>
@@ -322,8 +323,12 @@
                                     </StackLayout>
                                 </StackLayout>                                
                             </ScrollView>
+                            
+                            <!--Footer-->
+                            
                         </StackLayout>
                     </Frame>
+                    
                 </StackLayout>
             </ScrollView>
         </StackLayout>
