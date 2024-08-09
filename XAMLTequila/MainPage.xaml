@@ -298,8 +298,6 @@
                             <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
                             <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
                             <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
-                            <BoxView Color="Gray" HeightRequest="1" WidthRequest="5"/>
-                            <BoxView Color="Transparent" HeightRequest="1" WidthRequest="0.5"/>
                         </StackLayout>
                     </StackLayout>
 
